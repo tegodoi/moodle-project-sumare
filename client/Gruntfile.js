@@ -1,4 +1,4 @@
-// Generated on 2013-10-06 using generator-webapp 0.4.3
+// Generated on 2013-10-15 using generator-webapp 0.4.3
 'use strict';
 
 // # Globbing
@@ -261,8 +261,7 @@ module.exports = function (grunt) {
                         '*.{ico,png,txt}',
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
-                        'styles/fonts/{,*/}*.*',
-                        'bower_components/sass-bootstrap/fonts/*.*'
+                        'styles/fonts/{,*/}*.*'
                     ]
                 }]
             },
