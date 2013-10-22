@@ -1,4 +1,8 @@
-html, body {
+.container .hero-unit{
+    text-align: center;
+}
+
+/*html, body {
     font: 14px Arial;
     margin: 0 auto;
     padding: 0;
@@ -201,4 +205,4 @@ form:after {
     height: 284px;
     margin: 15px 0 0 270px;
 
-}
+}*/
