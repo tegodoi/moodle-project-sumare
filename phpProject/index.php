@@ -1,28 +1,11 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>client</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width">
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<!-- build:css(.tmp) styles/main.css -->
-	<link rel="stylesheet" href="styles/main.css">
-	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/docs/assets/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/docs/assets/css/bootstrap-responsive.css">
-	<!-- endbuild -->
-	<!-- build:js scripts/vendor/modernizr.js -->
-	<script src="bower_components/modernizr/modernizr.js"></script>
-	<!-- endbuild -->
-</head>
-<body>
-	<!--[if lt IE 10]>
-		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-	<![endif]-->
+<?php include 'includes/header.php'; ?>
+	<style>
+		body {
+			padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+		}
+	</style>
+
+	<?php include 'includes/loginBar.php'; ?>
 
 	<div class="container">
 		<div class="header">
@@ -64,31 +47,12 @@
 			</div>
 		</div>
 
+		<hr>
+
 		<div class="footer">
-			<p>&copy; Company 2013</p>
+			<p>&copy; Objeto de Aprendizagem de Projeto 2013</p>
 		</div>
 
 	</div> <!-- /container -->
 
-	<!-- build:js scripts/vendor.js -->
-	<!-- bower:js -->
-	<script src="bower_components/jquery/jquery.min.js"></script>
-	<script src="bower_components/bootstrap/docs/assets/js/bootstrap.min.js"></script>
-	<!-- endbower -->
-	<!-- endbuild -->
-
-	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-	<script>
-		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-		e.src='//www.google-analytics.com/analytics.js';
-		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-		ga('create','UA-XXXXX-X');ga('send','pageview');
-	</script>
-
-	<!-- build:js scripts/main.js -->
-	<script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
-	<!-- endbuild -->
-</body>
-</html>
+<?php include 'includes/footer.php'; ?>
