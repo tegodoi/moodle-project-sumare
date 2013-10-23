@@ -36,13 +36,10 @@ Pronto o projeto já esta baixando na sua máquina
 ####Instalar o Ruby e o Compass (Windows):
 - Baixe a versão `1.9.3` aqui [http://rubyinstaller.org/downloads/](http://rubyinstaller.org/downloads/)
 - Coloque o Ruby no PATH do window (variável de ambiente), exemplo: 
-
 	- From the desktop, right-click `My Computer` and click `Properties`.
 	- In the System Properties window, click on the `Advanced tab`.
 	- In the Advanced section, click the `Environment Variables` button.
-
 - Link para referência: [aqui](http://geekswithblogs.net/renso/archive/2009/10/21/how-to-set-the-windows-path-in-windows-7.aspx)
-
 - Abra o terminal do window e digita: `ruby -v` para exibir a versão do Ruby
 - Se a versão aparecer digite `gem install compass`
 
@@ -60,6 +57,7 @@ Pronto o projeto já esta baixando na sua máquina
 - Agora vamos instalar o Ruby 1.9.3, digite `rvm install 1.9.3`
 - Para ver a versão do Ruby digite `ruby -v`
 - Agora vamos instalar o Compass digite `gem update --system` e depois `gem install compass`
+- Link para referência: [aqui](http://igorrocha.com.br/instalando-rvm-no-ubuntu-12-04-e-ambientes-ruby-2-0-com-rails-4-0-e-ruby-1-9-3-com-rails-3-2/)
 - Pronto!!!
 
 ####Como rodar o projeto:
