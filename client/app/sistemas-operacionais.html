@@ -18,6 +18,34 @@
 		body {
 			padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
 		}
+		/* Customize the navbar links to be fill the entire space of the .navbar */
+		.settings .navbar-inner {
+			padding: 0;
+		}
+		.settings .nav {
+			margin: 0;
+			display: table;
+			width: 100%;
+		}
+		.settings .nav li {
+			display: table-cell;
+			width: 1%;
+			float: none;
+		}
+		.settings .nav li a {
+			font-weight: bold;
+			text-align: center;
+			border-left: 1px solid rgba(255,255,255,.75);
+			border-right: 1px solid rgba(0,0,0,.1);
+		}
+		.settings .nav li:first-child a {
+			border-left: 0;
+			border-radius: 3px 0 0 3px;
+		}
+		.settings .nav li:last-child a {
+			border-right: 0;
+			border-radius: 0 3px 3px 0;
+		}
 	</style>
 	<!-- endbuild -->
 
@@ -60,30 +88,22 @@
 	</div>
 
 	<div class="container">
-		
-		<div class="row-fluid">
-			<div class="span3">
-				<div class="well sidebar-nav sidebar-teacher">
-					<ul class="nav nav-list">
-						<li class="nav-header">Área do Professor</li>
-						<li class="active"><a href="#">Professor</a></li>
-						<li class="nav-header">Disciplinas Online</li>
-						<li><a href="sistemas-operacionais.html">Sistemas Operacionais</a></li>
-						<li><a href="#">História</a></li>
-						<li><a href="#">Algoritmos</a></li>
-						<li><a href="#">Java</a></li>
-						<li class="nav-header">Disciplinas Presenciais</li>
-						<li><a href="#">Banco de Dados</a></li>
-						<li><a href="#">Compiladores</a></li>
-						<li><a href="#">Redes de Computadores</a></li>
-						<li><a href="#">GTI - Gestão de Tecnologia da Informação</a></li>
-						<li class="nav-header">Sidebar</li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
+		<div class="navbar">
+			<div class="navbar-inner settings">
+				<div class="container">
+					<ul class="nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Downloads</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
 					</ul>
-				</div><!--/.well -->
-			</div><!--/span-->
+				</div>
+			</div>
+		</div><!-- /.navbar -->
+
+		<div class="row-fluid">
 			<div class="span9">
 				<div class="hero-unit">
 					<h1>Bem Vindo, Professor!</h1>
