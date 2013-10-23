@@ -46,6 +46,22 @@ Pronto o projeto já esta baixando na sua máquina
 - Abra o terminal do window e digita: `ruby -v` para exibir a versão do Ruby
 - Se a versão aparecer digite `gem install compass`
 
+####Instalar o Ruby e o Compass (Linux)
+- Digite no terminal os seguintes comandos:
+- `sudo apt-get update`
+- `sudo apt-get install curl`
+- `\curl -L https://get.rvm.io | bash -s stable`
+- `source ~/.rvm/scripts/rvm`
+- Para ver se tudo deu certo vamos ver a versão do RVM que acabamos de instalar `rvm -v`
+- Para o Ubuntu reconhecer os comados do RVM `gedid ~/.bashrc`
+- Insira isto no final do arquivo `[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"`
+- Pronto, o Ubuntu vai ler o RVM
+- Agora devemos ver quais são as dependências que o RVM necessita `rvm requirements`
+- Agora vamos instalar o Ruby 1.9.3, digite `rvm install 1.9.3`
+- Para ver a versão do Ruby digite `ruby -v`
+- Agora vamos instalar o Compass digite `gem update --system` e depois `gem install compass`
+- Pronto!!!
+
 ####Como rodar o projeto:
 
 - No console digitar: `npm install -g bower grunt-cli`
