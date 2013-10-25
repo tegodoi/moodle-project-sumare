@@ -16,7 +16,7 @@
 						<li class="nav-header">Área do Professor</li>
 						<li class="active"><a href="#">Professor</a></li>
 						<li class="nav-header">Disciplinas Online</li>
-						<li><a href="sistemas-operacionais.html">Sistemas Operacionais</a></li>
+						<li><a href="discipline_teacher.php">Sistemas Operacionais</a></li>
 						<li><a href="#">História</a></li>
 						<li><a href="#">Algoritmos</a></li>
 						<li><a href="#">Java</a></li>

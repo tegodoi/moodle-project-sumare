@@ -1,13 +1,11 @@
-
 /**
  * Module dependencies.
  */
 
 var express = require('express'),
-	http = require('http'),
-	path = require('path'),
-	io = require('socket.io'),
-	app = express();
+	app = express(),
+	http = require('http').createServer(app),
+	path = require('path');
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -16,18 +14,23 @@ app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
-app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
 if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
+	app.use(express.errorHandler());
 }
+
+var io = require('socket.io').listen(http);
+
+http.listen(app.get('port'));
 
 app.get('/', function (req, res) {
 	res.sendfile(__dirname + '/public/index.html');
 });
 
-http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
+io.sockets.on('connection', function(socket){
+	socket.on('send message', function(data){
+		io.sockets.emit('new message', data);
+	});
 });
