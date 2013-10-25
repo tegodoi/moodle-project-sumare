@@ -14,7 +14,7 @@
 				<div class="well sidebar-nav sidebar-teacher">
 					<ul class="nav nav-list">
 						<li class="nav-header">Área do Professor</li>
-						<li><a href="#">Professor</a></li>
+						<li><a href="restricted_teacher.php">Professor</a></li>
 						<li class="nav-header">Disciplinas Online</li>
 						<li class="active"><a href="discipline_teacher.php">Sistemas Operacionais</a></li>
 						<li><a href="#">História</a></li>
