@@ -52,7 +52,8 @@
 						</div>
 						<div id="collapseOne" class="accordion-body collapse in">
 							<div class="accordion-inner">
-								Anim pariatur cliche... <a href="#"><i class="icon-wrench"></i>Editar conteúdo</a>
+								Anim pariatur cliche... <a href="#">
+								<i class="icon-wrench"></i>Editar conteúdo</a>
 								<a href="createActivit.php" class="btn btn-small" type="button">Criar atividade</a>
 							</div>
 						</div>
